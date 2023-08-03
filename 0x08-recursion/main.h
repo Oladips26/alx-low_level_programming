@@ -13,25 +13,3 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 
 #endif
-task 0
-#include "main.h"
-
-/**
- * _puts_recursion - function that print a string recursively
- * @s: string to print
- * Return: void
- */
-
-void _puts_recursion(char *s)
-{
-	if (*s == '\0')
-	{
-		_putchar('\n');
-		return;
-	}
-	else
-	{
-		_putchar(*s);
-		_puts_recursion(s + 1);
-	}
-}
